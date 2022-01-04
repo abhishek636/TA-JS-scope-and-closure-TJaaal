@@ -20,7 +20,7 @@ Contains a specific section used for storing data also known as memory and a sec
 
 6. What are the different types of execution context?
 
-Global execution context and function execution context.
+Global execution context (GEC) and function execution context (FEC).
 
 7. When global and function execution context gets created?
 
