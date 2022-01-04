@@ -60,7 +60,7 @@ let percentage = (marks, total) => (marks * 100) / total;
 
 
 Which function are started with function key word are called function definition.
-if we store the function into a variable this type  of expression are called function expression.
+if we store the function into a variable this type  of expression are called function expression. In JavaScript.
 
 
 ```js
