@@ -19,7 +19,7 @@ console.log(species); // human
 
 <!-- Put your image below -->
 
-![](./img/1.png)
+![](./img/01.png)
 
 - Create the execution context diagram
 - What will be the value of species on 1 and 2
@@ -47,7 +47,7 @@ topLevelFn();
 
 <!-- Put your image below -->
 
-![](./img/2.png)
+![](./img/02.png)
 
 - Create the execution context diagram
 - What will be the value of 1 and 2
@@ -78,7 +78,7 @@ console.log(one, two, three, four); // Reference Error
 
 <!-- Put your image below -->
 
-![](./img/3.png)
+![](./img/03.png)
 
 - Create the execution context diagram
 - What will be the value of 1, 2, 3, 4 and 5 or error if the code does not work
