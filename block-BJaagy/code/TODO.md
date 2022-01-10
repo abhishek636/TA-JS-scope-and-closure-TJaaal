@@ -1,6 +1,30 @@
 1. Create a function by your choice that accepts a callback function.
 
+```js
+function addition(num, cb) {
+  return cb(num);
+}
+function add5(n) {
+  return n + 5;
+}
+console.log(addition(10, add5));
+```
+
 2. Create a function by you choice that returns a function reference.
+
+```js
+function filter(num, cb) {
+  return num.filter(cb);
+}
+function even(n) {
+  return n % 2 === 0;
+}
+function odd(n) {
+  return n % 2 !== 0;
+}
+console.log(filter([10, 15, 64, 81, 35, 61, 22], even));
+console.log(filter([10, 15, 64, 81, 35, 61, 22], odd));
+```
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
@@ -10,6 +34,10 @@ Have `map` return a new array filled with values that are the result of the 'cal
 
 ```js
 // Your code goes here
+
+function map(arr, cb) {
+  return arr.map(cb);
+}
 
 // Test Your Code
 function multiplyByTwo(n) {
@@ -25,6 +53,13 @@ multiplyByTwo(2); //-> 4
 ```js
 // Your code goes here
 
+function forEach(arr, cb) {
+  arr.forEach(cb);
+}
+function add(char) {
+  return alphabet += char;
+}
+
 // Test Your Code
 let alphabet = '';
 let letters = ['a', 'b', 'c', 'd'];
@@ -38,6 +73,18 @@ console.log(alphabet); //prints 'abcd'
 
 ```js
 // Test Your Code
+
+function filter(arr, cb) {
+  let newArr = [];
+  newArr = arr.filter(cb);
+  return newArr;
+}
+function evenNum(n) {
+  return n % 2 === 0;
+}
+function oddNum(n) {
+  return n % 2 !== 0;
+}
 
 var numbers = [1, 3, 5, 4, 7, 89, 234, 20];
 let even = filter(numbers, function (n) {
