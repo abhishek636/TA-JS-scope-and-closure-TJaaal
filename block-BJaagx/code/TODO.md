@@ -9,13 +9,15 @@ function multiplyArrayByN(arr, cb) {
     finalArr.push(cb(elm));
   }
   return finalArr;
-}
+} // Higher order function
+
+
 function addFive(n) {
   return n + 5;
-}
+} // Callback function
 function multiplyBy5(n) {
   return n * 5;
-}
+} // Callback function
 let numbersAddedFive = multiplyArrayByN(marks, addFive);
 let numbersMultipliedBy5 = multiplyArrayByN(marks, multiplyBy5);
 ```
@@ -27,19 +29,18 @@ let numbersMultipliedBy5 = multiplyArrayByN(marks, multiplyBy5);
 ```js
 function operation(n, opFn) {
   // your code goes her
+  return (opFn(n));
+}
+function divideBy5(n) {
+  return n / 10;
+}
+function multiplyAndHalf(n) {
+  return (n * n) / 5;
 }
 // TEST
-console.log(
-  operation(21, function (n) {
-    return n / 10;
-  })
-);
+console.log(operation(21, divideBy5));
 // Output: 2.1
-console.log(
-  operation(10, function (n) {
-    return (n * n) / 5;
-  })
-);
+console.log(operation(10, multiplyAndHalf));
 // Output: 20
 ```
 
@@ -48,18 +49,17 @@ console.log(
 ```js
 function operation(str, opFn) {
   // your code goes her
+  return (opFn(str));
+}
+function upperCase(text) {
+  return text.toUpperCase();
+}
+function splitText(text) {
+   return text.split(" ");
 }
 // TEST
-console.log(
-  operation("Learning to fly", function (text) {
-    return text.toUpperCase();
-  })
-);
+console.log(operation("Learning to fly", upperCase));
 // Output: "LEARNING TO FLY"
-console.log(
-  operation("Higher Order Fucntion", function (text) {
-    return text.split(" ");
-  })
-);
+console.log(operation("Higher Order Fucntion", splitText));
 // Output: ["Higher","Order","Function"]
 ```
