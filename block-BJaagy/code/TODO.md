@@ -28,7 +28,7 @@ console.log(filter([10, 15, 64, 81, 35, 61, 22], odd));
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
-   - A 'callback' function - a function that is applied to each element of the array (inside of the function 'map')
+   - A 'callback' function - a function that is applied to each element of the array (inside of the function 'map').
 
 Have `map` return a new array filled with values that are the result of the 'callback' function on each element of the input array.
 
