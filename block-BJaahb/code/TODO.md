@@ -13,7 +13,7 @@ let getSum = outer();
 let num = getSum();
 ```
 
-![](./img/closeure1)
+![](./img/closure1.png)
 
 2.
 
@@ -36,7 +36,7 @@ counter(); // 2
 counter(); // 3
 ```
 
-![](./img/closeure2)
+![](./img/closure2.png)
 
 3. Create the execution context diagram
 
@@ -59,4 +59,4 @@ tomato();
 
 ```
 
-![](./img/closeure3)
+![](./img/closure3.png)
