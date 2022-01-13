@@ -23,9 +23,9 @@ loop(
   (n) => n - 1,
   console.log
 );
-// → 3
-// → 2
-// → 1
+// →  3
+// →  2
+// →  1
 ```
 
 2. The function `reduce` takes an array and reduces the elements to a single value. For example it can sum all the numbers, multiply them, or any operation that you can put into a function.
